@@ -1,6 +1,7 @@
-import './style.styl'
+import './styles/tailwind.css'
+import './styles/style.styl'
 
 document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
+  <h1 class="mb-5 text-5xl font-bold">Site de Vision-data</h1>
+  <button class="btn">Bouton</button> 
 `
