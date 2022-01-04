@@ -4,35 +4,42 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vision Data</title>
+    <title>Nous contactez - Vision Data</title>
   </head>
   <body>
-    <div class="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box">
+    <div class="navbar mb-2 rounded-box">
       <div class="flex-1 px-2 mx-2">
-        <span class="text-lg font-bold">Vision</span>
+        <span class="text-lg font-bold text-neutral">Vision</span>
       </div> 
-      <div class="flex-none hidden px-2 mx-2 lg:flex">
-        <div class="flex items-stretch">
-          <a href="/about" class="btn btn-ghost btn-sm rounded-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 mr-2 stroke-current">              
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>            
-            </svg>
+      <div class="flex-none hidden px-2 mx-2 lg:flex text-neutral">
+        <div>
+          <a href="/" class="btn btn-ghost btn-sm rounded-btn">
+            Presentation
+          </a>
+          <a href="#" class="btn btn-ghost btn-sm rounded-btn">
             Documentation
           </a>
           <a href="basic.html" class="btn btn-ghost btn-sm rounded-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 mr-2 stroke-current">       
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>                   
-            </svg>
-            Lancer l'appli
+            <span class="btn btn-primary">Lancer l'appli</span>
           </a>
         </div>
       </div> 
     </div>
     
+    <main>
+      <div class="title-container">
+        <b>Open-Source</b>
+        <h1 class="mb-5 text-5xl font-bold">
+          Nous Contactez
+        </h1>
+        <p>Vision est une application web permettant de visualiser vos données provenant d'une API. Indiquer les données à visualiser et Vision vous créera des schémas</p>
+      </div>
 
-    <h1 class="mb-5 text-5xl font-bold">
-      Nous contactez
-    </h1>
+      <div class="text-container">
+          <h2>1. Par Mail</h2>
+          <p>vision.data@mail.Com</p>
+      </div>
+    </main>
 
     
     <footer class="p-10 footer bg-base-200 text-base-content">
@@ -44,18 +51,18 @@
       <div>
         <span class="footer-title">Ressources</span> 
         <a class="link link-hover">Documentation</a> 
-        <a class="link link-hover">Source</a> 
+        <a href="https://github.com/Vision-Data/app" class="link link-hover">Source</a> 
       </div> 
       <div>
         <span class="footer-title">Produit</span> 
-        <a class="link link-hover">A propos</a> 
-        <a class="link link-hover">Nous contactez</a> 
+        <a href="aboutus.html" class="link link-hover">A propos</a> 
+        <a href="contact.html" class="link link-hover">Nous contactez</a> 
       </div> 
       <div>
         <span class="footer-title">Legal</span> 
-        <a class="link link-hover">License</a> 
-        <a class="link link-hover">Conditions d'utilisations</a> 
-        <a class="link link-hover">Politique de confidentialité</a>
+        <a href="https://github.com/Vision-Data/app/blob/main/LICENSE" class="link link-hover">License</a> 
+        <a href="agreement.html" class="link link-hover">Conditions d'utilisations</a> 
+        <a href="policy.html" class="link link-hover">Politique de confidentialité</a>
       </div>
       <div>
         <span class="footer-title">Social</span> 
@@ -75,6 +82,7 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="/main.js"></script>
+    <div class="decoration"></div>
+<script type="module" src="/main.js"></script>
   </body>
 </html>
