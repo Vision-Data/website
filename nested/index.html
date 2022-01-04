@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Politique de confidentialité - Vision Data</title>
+    <title>Nous contactez - Vision Data</title>
   </head>
   <body>
     <div class="navbar mb-2 rounded-box">
@@ -26,43 +26,30 @@
       </div> 
     </div>
     
-    <main>
-      <div class="title-container">
-        <b>Open-Source</b>
-        <h1 class="mb-5 text-5xl font-bold">
-          Politique de confidentialité
-        </h1>
-        <p>Vision est une application web permettant de visualiser vos données provenant d'une API. Indiquer les données à visualiser et Vision vous créera des schémas</p>
-      </div>
-
-      <div class="text-container">
-          <h2>1. Par Mail</h2>
-          <p>vision.data@mail.Com</p>
-      </div>
-    </main>
+    <main id="app"></main>
 
     
     <footer class="p-10 footer bg-base-200 text-base-content">
       <div>
-        <img src="favicon.png" alt="Logo de Vision" style="width: 3rem;height: 3rem;">
+        <img src="../favicon.png" alt="Logo de Vision" style="width: 3rem;height: 3rem;">
         <b>Vision Data</b>
         <p>Open-source project started in 2021</p>
       </div> 
       <div>
         <span class="footer-title">Ressources</span> 
-        <a class="link link-hover">Documentation</a> 
+        <a href="#" class="link link-hover">Documentation</a> 
         <a href="https://github.com/Vision-Data/app" class="link link-hover">Source</a> 
       </div> 
       <div>
         <span class="footer-title">Produit</span> 
-        <a href="aboutus.html" class="link link-hover">A propos</a> 
-        <a href="contact.html" class="link link-hover">Nous contactez</a> 
+        <a href="/nested/index.html#aboutus" class="link link-hover">A propos</a> 
+        <a href="/nested/index.html#contact" class="link link-hover">Nous contactez</a> 
       </div> 
       <div>
         <span class="footer-title">Legal</span> 
         <a href="https://github.com/Vision-Data/app/blob/main/LICENSE" class="link link-hover">License</a> 
-        <a href="agreement.html" class="link link-hover">Conditions d'utilisations</a> 
-        <a href="policy.html" class="link link-hover">Politique de confidentialité</a>
+        <a href="/nested/index.html#agreement" class="link link-hover">Conditions d'utilisations</a> 
+        <a href="/nested/index.html#policy" class="link link-hover">Politique de confidentialité</a>
       </div>
       <div>
         <span class="footer-title">Social</span> 
@@ -83,6 +70,6 @@
       </div>
     </footer>
     <div class="decoration"></div>
-<script type="module" src="/main.js"></script>
+    <script type="module" src="./nested.js"></script>
   </body>
 </html>
