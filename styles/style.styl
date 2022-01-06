@@ -129,6 +129,20 @@ em {
 	display: flex;
 }
 
+.journey-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.journey-text {
+	font-size: 2.3rem;
+	font-weight: 700;
+	width: 30rem;
+	line-height: 3rem;
+}
+
 .features-container {
 	display: grid;
 	gap: 2rem;
@@ -155,9 +169,35 @@ em {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 2rem 0;
 
 	& .card {
 		width: 100%;
+		background-color: var(--vision-orange);
+
+		&-body {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 2rem;
+
+			p {
+				width: 20rem;
+				font-size: 1.6rem;
+				font-weight: bold;
+			}
+		}
+
+		&-actions {
+			margin: 0;
+
+			button {
+				background-color: white;
+				color: var(--vision-orange);
+				border: none;
+				font-weight: bold;
+			}
+		}
 	}
 }
 
