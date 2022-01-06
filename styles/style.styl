@@ -129,6 +129,17 @@ em {
 	display: flex;
 }
 
+.features-container {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+
+	&> .card {
+		flex: 1;
+		--padding-card: 1rem 1rem 1.5rem 1rem;
+	}
+}
+
 .asset {
 	flex: 1;
 }
@@ -138,6 +149,16 @@ em {
 	font-weight: bold;
 	width: 30rem;
 	line-height: 3.5rem;
+}
+
+.callout {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	& .card {
+		width: 100%;
+	}
 }
 
 // Footer
