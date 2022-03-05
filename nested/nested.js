@@ -38,6 +38,28 @@ function route() {
             </div>
             `;
             break;
+        case 'lexique':
+            document.querySelector('#app').innerHTML = `
+            <div class="title-container">
+              <b>Open-Source</b>
+              <h1 class="mb-5 text-5xl font-bold">
+                Lexique
+              </h1>
+              <p>Vous ne comprenez pas un terme que vous avez rencontrée dans l'application, nous vous éclairerons ici !</p>
+            </div>
+      
+            <div class="text-container">
+                <h2>API</h2>
+                <p>These User Terms of Service ("Terms") are between you ("you") and Postman, Inc. ("Postman" or "we") and govern your use of all versions of the Postman software and services, including the Postman API and Beta Previews (collectively, the "Services"), and the Postman websites, including but not limited to www.postman.com, blog.postman.com, learning.postman.com, community.postman.com, and store.postman.com (the "Websites").</p>
+                
+                <h2>Requête HTTP</h2>
+                <p>By downloading, installing, or using the Services on any computer system, or by accepting these Terms (either by clicking a box indicating that you accept these Terms, or by executing an ordering document ("Order") referencing these Terms), you acknowledge and agree that you have read, understand, and agree to be bound by these Terms and our Privacy Policy.</p>
+                
+                <h2>Body</h2>
+                <p>Subject to your compliance with these Terms and paying the applicable fees, Postman grants you a </p>
+            </div>
+            `;
+            break;
         case 'agreement':
             document.querySelector('#app').innerHTML = `
             <div class="title-container">
