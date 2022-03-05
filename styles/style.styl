@@ -186,6 +186,10 @@ em {
 
 	& img {
 		width: 50%;
+		max-width: 25rem;
+	}
+	& .callout-text {
+		margin-right: 10rem
 	}
 }
 
@@ -203,11 +207,62 @@ em {
 	justify-content: center;
 }
 
-.journey-text {
-	font-size: 2.3rem;
-	font-weight: 700;
-	width: 30rem;
-	line-height: 3rem;
+.journey {
+	padding-top: 4rem;
+
+	&-container {
+		justify-content: space-between;
+
+		& .data-animation {
+			margin-top: 2rem;
+
+			img {
+				object-fit: contain;
+				max-height: 25rem;
+			}
+		}
+		& .chart-animation {
+			margin-top: 2rem;
+
+			img {
+				object-fit: contain;
+				max-height: 25rem;
+				width: 75%
+				margin-left: auto
+			}
+		}
+
+		& .query-animation {
+			position: relative;
+
+			& img {
+				margin-left: auto;
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: rgba(255, 255, 255, 0.168);
+			}
+		}
+	}
+
+	&-title {
+		text-align: center;
+		color: var(--vision-yellow);
+		margin-bottom: 4rem;
+	}
+
+	&-text {
+		font-size: 2.3rem;
+		font-weight: 700;
+		width: 30rem;
+		line-height: 3rem;
+	}
 }
 
 .features-container {
@@ -304,6 +359,12 @@ em {
 			}
 		}
 	}
+}
+
+.transition-asset {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 // Pages Textes
