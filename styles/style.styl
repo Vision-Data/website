@@ -171,7 +171,7 @@ em {
 	display: grid;
 	gap: 6rem;
 	grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
-	margin-bottom 8rem
+	margin-bottom: 8rem;
 
 	& .card {
 		flex: 1;
@@ -186,19 +186,29 @@ em {
 
 		&-title {
 			margin: 0;
-			margin-bottom 0.2rem
-			font-weight bold
+			margin-bottom: 0.2rem;
+			font-weight: bold;
 		}
 
 		& figure {
 			height: 12rem;
 			width: unset;
 			border-radius: 0.5rem;
+			display: flex;
+			align-items: center;
+			justify-content: center
+
+			& img {
+				height: 75%;
+				width: auto;
+			}
 		}
-		&:nth-of-type(even) figure{
+
+		&:nth-of-type(even) figure {
 			background-color: var(--vision-orange);
 		}
-		&:nth-of-type(odd) figure{
+
+		&:nth-of-type(odd) figure {
 			background-color: var(--vision-yellow);
 		}
 	}
@@ -219,21 +229,22 @@ em {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 2rem 0;
+	margin: 4rem 0;
 
 	& .card {
 		width: 100%;
+		padding 2rem
 		background-color: var(--vision-orange);
 
 		&-body {
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
-			margin: 0 2rem;
+			margin: 0 1rem;
 
 			p {
 				width: 20rem;
-				font-size: 1.6rem;
+				font-size: 2.5rem;
 				font-weight: bold;
 			}
 		}
@@ -246,6 +257,7 @@ em {
 				color: var(--vision-orange);
 				border: none;
 				font-weight: bold;
+				font-size 1.2rem
 			}
 		}
 	}
