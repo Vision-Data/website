@@ -125,7 +125,7 @@ main {
 
 .vision-menu {
 	& a {
-		text-transform: capitalize;
+		text-transform: unset;
 		font-weight: bold;
 		font-size: 1rem;
 	}
@@ -267,6 +267,10 @@ em {
 	}
 }
 
+.result-text {
+	margin-top: -5rem;
+}
+
 .features-container {
 	display: grid;
 	gap: 6rem;
@@ -340,13 +344,14 @@ em {
 		&::after {
 			content: '';
 			background-image: url('assets/transparentlogo.png');
-			background-repeat no-repeat
-			background-size: cover
+			background-repeat: no-repeat;
+			background-size: cover;
 			position: absolute;
 			top: 0;
 			right: 0;
 			width: 22rem;
 			height: 100%;
+			z-index: 0;
 		}
 
 		&-body {
@@ -354,6 +359,7 @@ em {
 			justify-content: space-between;
 			align-items: center;
 			margin: 0 1rem;
+			z-index: 1;
 
 			p {
 				width: 20rem;
