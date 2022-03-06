@@ -335,6 +335,19 @@ em {
 		width: 100%;
 		padding: 2rem;
 		background-color: var(--vision-orange);
+		position: relative;
+
+		&::after {
+			content: '';
+			background-image: url('assets/transparentlogo.png');
+			background-repeat no-repeat
+			background-size: cover
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 22rem;
+			height: 100%;
+		}
 
 		&-body {
 			flex-direction: row;
