@@ -56,7 +56,22 @@ function route() {
                 <p>By downloading, installing, or using the Services on any computer system, or by accepting these Terms (either by clicking a box indicating that you accept these Terms, or by executing an ordering document ("Order") referencing these Terms), you acknowledge and agree that you have read, understand, and agree to be bound by these Terms and our Privacy Policy.</p>
                 
                 <h2>Body</h2>
-                <p>Subject to your compliance with these Terms and paying the applicable fees, Postman grants you a </p>
+                <p>Subject to your compliance with thes</p>
+                
+                <h2>Token</h2>
+                <p>Subject to your compliance with thes</p>
+
+                <h2>Header</h2>
+                <p>Subject to your compliance with thes</p>
+
+                <h2>Protocole HTTPS</h2>
+                <p>Subject to your compliance with thes</p>
+
+                <h2>Tableau, Objet et valeurs (Array, Object, Value)</h2>
+                <p>Subject to your compliance with thes</p>
+
+                <h2>GET, POST, PUT et DELETE</h2>
+                <p>Subject to your compliance with thes</p>
             </div>
             `;
             break;
