@@ -3,26 +3,26 @@ import '../styles/style.styl'
 
 route();
 
-window.addEventListener('hashchange', ()=>{
+window.addEventListener('hashchange', () => {
   route();
 });
 
 function route() {
-  if(window.location.hash) {
+  if (window.location.hash) {
     const hash = window.location.hash;
-    switch (hash.replace('#','')) {
-        case 'aboutus':
-            document.querySelector('#app').innerHTML = `
+    switch (hash.replace('#', '')) {
+      case 'aboutus':
+        document.querySelector('#app').innerHTML = `
             <div class="title-container">
               <b>Open-Source</b>
               <h1 class="mb-5 text-5xl font-bold">
-                A propos
+                Qui sommes-nous ?
               </h1>
               <p>Vision est une application web permettant de visualiser vos données provenant d'une API. Indiquer les données à visualiser et Vision vous créera des schémas</p>
             </div>
       
             <div class="text-container">
-                <h2>1. Qui sont Nous</h2>
+                <h2>1. Notre projet</h2>
                 <p>These User Terms of Service ("Terms") are between you ("you") and Postman, Inc. ("Postman" or "we") and govern your use of all versions of the Postman software and services, including the Postman API and Beta Previews (collectively, the "Services"), and the Postman websites, including but not limited to www.postman.com, blog.postman.com, learning.postman.com, community.postman.com, and store.postman.com (the "Websites").</p>
                 
                 <h2>2. Nos Objectifs</h2>
@@ -31,15 +31,24 @@ function route() {
                 
                 <p>You may not use the Services in violation of export control or sanctions laws of the United States or any other applicable jurisdiction. You may not use the Services if you are or are working on behalf of a Specially Designated National (SDN) or a person subject to similar blocking or denied party prohibitions administered by a U.S. government agency.</p>
                 
-                <h2>3. La vie du projet</h2>
-                <p>Subject to your compliance with these Terms and paying the applicable fees, Postman grants you a </p>
-                
-                <p>The Services include certain code and libraries licensed to us by third parties, including open source software ("OSS") as listed at postman.com/legal/third-party along with the applicable OSS license. Your right to use such OSS shall be governed by the applicable OSS license agreement instead of these Terms.</p>
+                <h2>3. L'équipe Vision</h2>
+                <p>6 étudiants qui se sont réunis pour créer un projet qui les motive et faire avancer le monde</p>
+                <ul>
+                <li>Chargée de communication: Ludivine Vinet</li>
+                <li>Développeur Back & Chef Technique: Arthur Geay</li>
+                <li>Chef de projet & designer:Jérémie Delécrin</li>
+
+                <h2>4. Nos valeurs</h2>
+                <ul>
+                  <li>Entraide</li>
+                  <li>Vulgarisation</li>
+                  <li>Accessibilité</li>
+                </ul>
             </div>
             `;
-            break;
-        case 'lexique':
-            document.querySelector('#app').innerHTML = `
+        break;
+      case 'lexique':
+        document.querySelector('#app').innerHTML = `
             <div class="title-container">
               <b>Open-Source</b>
               <h1 class="mb-5 text-5xl font-bold">
@@ -50,33 +59,63 @@ function route() {
       
             <div class="text-container">
                 <h2>API</h2>
-                <p>These User Terms of Service ("Terms") are between you ("you") and Postman, Inc. ("Postman" or "we") and govern your use of all versions of the Postman software and services, including the Postman API and Beta Previews (collectively, the "Services"), and the Postman websites, including but not limited to www.postman.com, blog.postman.com, learning.postman.com, community.postman.com, and store.postman.com (the "Websites").</p>
+                <p>Une API aussi appelée interface de programmation d’application est un service de communication qui permet d’échanger des données. Plus précisément, on va utiliser les fonctions d’un logiciel sur un autre programme pour développer des fonctionnalités et importer des données.</p>
+
+                <h2>Open Source</h2>
+                <p>L’open source est une méthode de codage publique, l’auteur accorde tous les droits sur son logiciel aux autres utilisateurs. Celui-ci peut être modifié, étudié ou encore ré-utilisé par une autre personne.</p>
+
+                <h2>Schéma</h2>
+                <p>Un schéma est une représentation des données visuelle qui est intuitive et simple.</p>
+
+                <h2>Donnée</h2>
+                <p>Une donnée est un élément d’information qui va servir à apporter une réponse à une question. Elle peut aussi être étudiée dans le cadre de recherches.</p>
+
+                <h2>Github</h2>
+                <p>Guithub est une plateforme qui permet aux développeurs de stocker et de partager leurs codes. Ils peuvent les rendre publique ou les garder privé. </p>
                 
                 <h2>Requête HTTP</h2>
-                <p>By downloading, installing, or using the Services on any computer system, or by accepting these Terms (either by clicking a box indicating that you accept these Terms, or by executing an ordering document ("Order") referencing these Terms), you acknowledge and agree that you have read, understand, and agree to be bound by these Terms and our Privacy Policy.</p>
+                <p>Une requête http est utilisée par le navigateur web pour consulter un site internet. En fonction de la requête demandée le navigateur web va renvoyer directement sur la page web demandée.</p>
                 
-                <h2>Body</h2>
-                <p>Subject to your compliance with thes</p>
-                
-                <h2>Token</h2>
-                <p>Subject to your compliance with thes</p>
-
                 <h2>Header</h2>
-                <p>Subject to your compliance with thes</p>
-
+                <p>Le header correspond à l’en-tête d’un site web, c’est dans cette partie que l’on retrouve le menu de navigation et le logo de la marque</p>
+                
                 <h2>Protocole HTTPS</h2>
-                <p>Subject to your compliance with thes</p>
+                <p>Le protocole https prouve que le site est sécurisé ce qui garantit la confidentialité des échanges entre l'ordinateur de l'utilisateur et le service.</p>
 
-                <h2>Tableau, Objet et valeurs (Array, Object, Value)</h2>
-                <p>Subject to your compliance with thes</p>
-
+                <h2>Body (Corps d'une requête)</h2>
+                <p>C'est un ensemble de lignes non-obligatoire permettant de fournir des informations lors de l'envoi de données à un service.</p>
+                
+                
                 <h2>GET, POST, PUT et DELETE</h2>
-                <p>Subject to your compliance with thes</p>
+                <p>
+                  <ul>
+                    <li>GET (RECEVOIR) est une requête http qui permet d’obtenir une ressource</li>
+                    <li>POST (ENVOYER) est une requête http qui permet d’avoir accès à un formulaire en ligne</li>
+                    <li>PUT (MODIFIER) est une requête qui permet de mettre à jour ou d’insérer une ressource</li>
+                    <li>DELETE (SUPPIMER) est une requête qui permet d’effacer des informations</li>
+                  </ul>
+                </p>
+
+                <h2>Token (Jeton)</h2>
+                <p>Un token est un élément qui permet de certifier l’authentification d’une personne sur un site web.</p>
+                
+                <h2>Tableau, Objet et valeurs (Array, Object, Value)</h2>
+                <p>
+                <ul>
+                  <li>Un tableau est un groupement de valeurs</li>
+                  <li>Un objet est un structuration de données permettant de regrouper des valeurs autour d'un même thème</li>
+                  <li>Une valeur est une information ou une donnée</li>
+                </ul>
+                </p>
+
+                <h2>JSON</h2>
+                <p>JSON (JavaScript Objet Notation) est un format de données caractérisé par l'utilisation d'accolades "{}" et sa représentation en arborescence. Il est facilement lisible par les ordinateurs et les humains.</p>
+
             </div>
             `;
-            break;
-        case 'agreement':
-            document.querySelector('#app').innerHTML = `
+        break;
+      case 'agreement':
+        document.querySelector('#app').innerHTML = `
             <div class="title-container">
             <b>Open-Source</b>
             <h1 class="mb-5 text-5xl font-bold">
@@ -302,9 +341,9 @@ function route() {
       
           </div>
             `;
-            break;
-        case 'policy':
-            document.querySelector('#app').innerHTML = `
+        break;
+      case 'policy':
+        document.querySelector('#app').innerHTML = `
             <div class="title-container">
               <b>Open-Source</b>
               <h1 class="mb-5 text-5xl font-bold">
@@ -542,9 +581,9 @@ function route() {
             
             </div>
             `;
-            break;
-        case 'contact':
-            document.querySelector('#app').innerHTML = `
+        break;
+      case 'contact':
+        document.querySelector('#app').innerHTML = `
             <div class="title-container">
               <b>Open-Source</b>
               <h1 class="mb-5 text-5xl font-bold">
@@ -590,12 +629,12 @@ function route() {
             })
             </script>
             `;
-            break;
-    
-        default:
-            break;
+        break;
+
+      default:
+        break;
     }
-} else {
+  } else {
     // Fragment doesn't exist
-}
+  }
 }
