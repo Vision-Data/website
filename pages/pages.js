@@ -34,9 +34,10 @@ function route() {
                 <h2>3. L'équipe Vision</h2>
                 <p>6 étudiants qui se sont réunis pour créer un projet qui les motive et faire avancer le monde</p>
                 <ul>
-                <li>Chargée de communication: Ludivine Vinet</li>
-                <li>Développeur Back & Chef Technique: Arthur Geay</li>
-                <li>Chef de projet & designer:Jérémie Delécrin</li>
+                <li><strong>Chargée de communication:</strong> Ludivine Vinet</li>
+                <li><strong>Développeur Back & Chef Technique:</strong> Arthur Geay</li>
+                <li><strong>Chef de projet & designer:</strong> Jérémie Delécrin</li>
+                <li><strong>Développeur Front-End:</strong> Paulin Sirot</li>
 
                 <h2>4. Nos valeurs</h2>
                 <ul>
