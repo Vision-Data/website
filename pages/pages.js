@@ -597,7 +597,7 @@ function route() {
                 <div class="copy-mail">
                 <div class="mockup-code text-primary-content">
                     <pre>
-                      <code>vision@mail.fr</code>
+                      <code>visiondata@mail.com</code>
                     </pre>
                 </div>
                 <div class="copy">
