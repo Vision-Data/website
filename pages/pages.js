@@ -38,6 +38,7 @@ function route() {
                 <li><strong>Développeur Back & Chef Technique:</strong> Arthur Geay</li>
                 <li><strong>Chef de projet & designer:</strong> Jérémie Delécrin</li>
                 <li><strong>Développeur Front-End:</strong> Paulin Sirot</li>
+                <li><strong>Développeuse Front-End:</strong> Léone Lalloué</li>
 
                 <h2>4. Nos valeurs</h2>
                 <ul>
