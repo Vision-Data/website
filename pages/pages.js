@@ -39,6 +39,7 @@ function route() {
                 <li><strong>Chef de projet & designer:</strong> Jérémie Delécrin</li>
                 <li><strong>Développeur Front-End:</strong> Paulin Sirot</li>
                 <li><strong>Développeuse Front-End:</strong> Léone Lalloué</li>
+                <li><strong>Développeur Front-End:</strong> Yessi Munguengui</li>
 
                 <h2>4. Nos valeurs</h2>
                 <ul>
