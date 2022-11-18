@@ -45,6 +45,14 @@ function createArticle(article) {
     return articleElement;
 }
 
+async function getTagName(tagId) {
+    const response = await fetch(`https://blog.vision-data.io/items/tags/${tagId}`, {
+        method: 'GET'
+    });
+    const data = await response.json();
+    return data.data.name;
+}
+
 async function init() {
     const articles = await getArticles();
     const articlesContainer = document.querySelector('#news-container');
@@ -58,6 +66,10 @@ async function init() {
     } else {
         const urlParams = new URLSearchParams(window.location.search);
         const queryTag = urlParams.get('tag');
+        if (queryTag) {
+            const tagName = await getTagName(queryTag);
+            articlesContainer.innerHTML += `<p>Recherche pour la catégorie <strong>${tagName}</strong></p>`;
+        }
         articles.forEach(article => {
             const articleElement = createArticle(article);
             articlesContainer.appendChild(articleElement);
