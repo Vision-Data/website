@@ -656,6 +656,10 @@ em {
 }
 
 // Articles lists
+.blog {
+	min-height: 50vh;
+}
+
 .title-news {
 	font-size: 2rem;
 	font-weight: bold;
@@ -664,6 +668,9 @@ em {
 }
 
 .news {
+	&-empty {
+		margin-bottom : 20rem;
+	}
 	&-container {
 		margin: 0 auto;
 		margin-top: 4rem;
@@ -912,6 +919,7 @@ em {
 
 		&-link {
 			color: var(--vision-orange);
+
 			&:hover {
 				text-decoration: underline;
 			}
