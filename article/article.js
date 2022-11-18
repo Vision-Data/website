@@ -10,7 +10,7 @@ async function getData() {
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
 
-    const response = await fetch(`https://blog.vision-data.io/items/articles_vision/${id}?fields=title,thumbnail,introduction,content,date_created,date_updated,tags.tags_id.name`, {
+    const response = await fetch(`https://blog.vision-data.io/items/articles_vision/${id}?fields=title,thumbnail,introduction,content,date_created,date_updated,tags.tags_id.name,sources.sources_id.*`, {
         method: 'GET'
     });
     const data = await response.json();
@@ -36,4 +36,12 @@ if (article.tags) {
         document.querySelector('.article-tags').innerHTML += `<li class="article-tags-item">${tag}</li>`;
     });
 }
-if (article.sources_vision) document.querySelector('.article-sources').innerHTML = article.sources_vision.sources_id.name;
+if (article.sources) {
+    const sources = article.sources;
+    const sourcesLink = sources.map(source => source.sources_id.link);
+    const sourcesName = sources.map(source => source.sources_id.name);
+
+    sourcesLink.forEach((source, index) => {
+        document.querySelector('.article-sources').innerHTML += `<li class="article-sources-item"><a href="${source}" class="article-sources-link" target="_blank">${sourcesName[index]}</a></li>`;
+    });
+}
