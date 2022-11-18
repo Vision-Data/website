@@ -32,8 +32,6 @@ function createArticle(article) {
 }
 
 
-console.log(await getArticles());
-
 const articles = await getArticles();
 const articlesContainer = document.querySelector('#news-container');
 articles.forEach(article => {

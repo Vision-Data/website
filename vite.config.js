@@ -3,6 +3,7 @@ const { defineConfig } = require('vite')
 
 module.exports = defineConfig({
   build: {
+    target: 'esnext',
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),

@@ -20,7 +20,6 @@ async function getData() {
 
 
 const article = await getData();
-console.log(article);
 const articleDate = new Date(article.date_updated).toLocaleDateString('fr-FR', {day: 'numeric', month: 'long', year: 'numeric'});
 
 document.querySelector('.article-title').innerHTML = article.title;
