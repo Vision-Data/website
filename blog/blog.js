@@ -36,6 +36,5 @@ const articles = await getArticles();
 const articlesContainer = document.querySelector('#news-container');
 articles.forEach(article => {
     const articleElement = createArticle(article);
-    console.log(articleElement);
     articlesContainer.appendChild(articleElement);
 });
