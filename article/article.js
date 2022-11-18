@@ -20,11 +20,14 @@ async function getData() {
 
 
 const article = await getData();
+console.log(article);
 const articleDate = new Date(article.date_updated).toLocaleDateString('fr-FR', {day: 'numeric', month: 'long', year: 'numeric'});
-const articleTitle = document.querySelector('.article-title').innerHTML = article.title;
-const articleThumbnail = document.querySelector('.article-thumbnail-img').src = "https://blog.vision-data.io/assets/" + article.thumbnail;
-const articleIntroduction = document.querySelector('.article-accroche').innerHTML = article.introduction;
-const articleContent = document.querySelector('.article-content').innerHTML = article.content;
-const articleDateUpdated = document.querySelector('.article-date').innerHTML = articleDate;
-const articleTags = document.querySelector('.article-tags').innerHTML = article.tags_vision.tags_id.name;
-const articleSources = document.querySelector('.article-sources').innerHTML = article.sources_vision.sources_id.name;
+
+document.querySelector('.article-title').innerHTML = article.title;
+document.querySelector('.article-thumbnail-img').src = "https://blog.vision-data.io/assets/" + article.thumbnail;
+document.querySelector('.article-accroche').innerHTML = article.introduction;
+document.querySelector('.article-content').innerHTML = article.content;
+document.querySelector('.article-date').innerHTML = articleDate;
+
+if (article.tags_vision) document.querySelector('.article-tags').innerHTML = article.tags_vision.tags_id.name;
+if (article.sources_vision) document.querySelector('.article-sources').innerHTML = article.sources_vision.sources_id.name;
