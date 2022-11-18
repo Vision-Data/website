@@ -5,11 +5,25 @@ import '../styles/style.styl'
 
 async function getArticles() {
     let articles = [];
-    const response = await fetch(`https://blog.vision-data.io/items/articles_vision?fields=id,title,thumbnail,introduction`, {
-        method: 'GET'
-    });
-    const data = await response.json();
-    articles = data.data;
+    const urlParams = new URLSearchParams(window.location.search);
+    const queryTag = urlParams.get('tag');
+    if (queryTag) {
+        console.log('ici');
+        const response = await fetch(`https://blog.vision-data.io/items/articles_vision?fields=id,title,thumbnail,introduction,tags.tags_id.*&filter[tags][tags_id][id][_eq]=${queryTag}`, {
+            method: 'GET'
+        });
+        const data = await response.json();
+        articles = data.data;
+        console.log(articles);
+    } else {
+        console.log('normal');
+        const response = await fetch(`https://blog.vision-data.io/items/articles_vision?fields=id,title,thumbnail,introduction`, {
+            method: 'GET'
+        });
+        const data = await response.json();
+        articles = data.data;
+        
+    }
     return articles;
 }
 
