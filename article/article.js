@@ -18,7 +18,7 @@ function createArticle(article) {
     const articleElement = document.createElement('li');
     articleElement.classList.add('news-item');
     articleElement.innerHTML = `
-    <a href="/article/index.html?id=${article.id}" class="news-link">
+    <a href="${article.id}" class="news-link">
         <div class="news-article">
             <div class="news-image"><img src="https://blog.vision-data.io/assets/${article.thumbnail}" alt=""/></div>
             <div class="news-infos">
