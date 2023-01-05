@@ -151,7 +151,7 @@ function route() {
           Le responsable publication est une personne physique ou une personne morale.<br>
           <strong>Webmaster</strong> : A.Geay – vision<br>
           <strong>Hébergeur</strong> : ovh – 2 rue Kellermann 59100 Roubaix 1007<br>
-          <strong>Délégué à la protection des données</strong> : A.Geat – vision@mail.com<br>
+          <strong>Délégué à la protection des données</strong> : A.Geat – visiondata@mail.com<br>
           </p>
 
           <div ng-bind-html="linkHTML"><p>Ce modèle de mentions légales est proposé par le <a href="https://fr.orson.io/1371/generateur-mentions-legales" title="générateur de mentions légales RGPD d">générateur de mentions légales RGPD d'Orson.io</a></p></div>
@@ -254,10 +254,10 @@ function route() {
 
           <p>Dès que <a href="https://vision-data.io/">https://vision-data.io/</a> a connaissance du décès d’un Utilisateur et à défaut d’instructions de sa part, <a href="https://vision-data.io/">https://vision-data.io/</a> s’engage à détruire ses données, sauf si leur conservation s’avère nécessaire à des fins probatoires ou pour répondre à une obligation légale.</p>
            
-          <p>Si l’Utilisateur souhaite savoir comment <a href="https://vision-data.io/">https://vision-data.io/</a> utilise ses Données Personnelles, demander à les rectifier ou s’oppose à leur traitement, l’Utilisateur peut contacter <a href="https://vision-data.io/">https://vision-data.io/</a> par écrit à l’adresse suivante : </p>
+          <p>Si l’Utilisateur souhaite savoir comment <a href="https://vision-data.io/">https://vision-data.io/</a> utilise ses Données Personnelles, demander à les rectifier ou s’oppose à leur traitement, l’Utilisateur peut contacter  l’adresse suivante : </p>
            
-          Vision Data team – DPO, A.Geat <br>
-          20 boulevard General de Gaulle 44000 Nantes.
+          visiondata@mail.com <br>
+         
            
           <p>Dans ce cas, l’Utilisateur doit indiquer les Données Personnelles qu’il souhaiterait que <a href="https://vision-data.io/">https://vision-data.io/</a> corrige, mette à jour ou supprime, en s’identifiant précisément avec une copie d’une pièce d’identité (carte d’identité ou passeport). </p>
 
@@ -298,27 +298,13 @@ function route() {
           <h2>9. Liens hypertextes « cookies » et balises (“tags”) internet</h2>
           <p>
           Le site <a href="https://vision-data.io/">https://vision-data.io/</a> contient un certain nombre de liens hypertextes vers d’autres sites, mis en place avec l’autorisation de <a href="https://vision-data.io/">https://vision-data.io/</a>. Cependant, <a href="https://vision-data.io/">https://vision-data.io/</a> n’a pas la possibilité de vérifier le contenu des sites ainsi visités, et n’assumera en conséquence aucune responsabilité de ce fait.</p>
-          Sauf si vous décidez de désactiver les cookies, vous acceptez que le site puisse les utiliser. Vous pouvez à tout moment désactiver ces cookies et ce gratuitement à partir des possibilités de désactivation qui vous sont offertes et rappelées ci-après, sachant que cela peut réduire ou empêcher l’accessibilité à tout ou partie des Services proposés par le site.
+          
           <p></p>
 
           <h3>9.1. « COOKIES »</h3>
            <p>
-          Un « cookie » est un petit fichier d’information envoyé sur le navigateur de l’Utilisateur et enregistré au sein du terminal de l’Utilisateur (ex : ordinateur, smartphone), (ci-après « Cookies »). Ce fichier comprend des informations telles que le nom de domaine de l’Utilisateur, le fournisseur d’accès Internet de l’Utilisateur, le système d’exploitation de l’Utilisateur, ainsi que la date et l’heure d’accès. Les Cookies ne risquent en aucun cas d’endommager le terminal de l’Utilisateur.</p>
-           <p>
-          <a href="https://vision-data.io/">https://vision-data.io/</a> est susceptible de traiter les informations de l’Utilisateur concernant sa visite du Site, telles que les pages consultées, les recherches effectuées. Ces informations permettent à <a href="https://vision-data.io/">https://vision-data.io/</a> d’améliorer le contenu du Site, de la navigation de l’Utilisateur.</p>
-           <p>
-          Les Cookies facilitant la navigation et/ou la fourniture des services proposés par le Site, l’Utilisateur peut configurer son navigateur pour qu’il lui permette de décider s’il souhaite ou non les accepter de manière à ce que des Cookies soient enregistrés dans le terminal ou, au contraire, qu’ils soient rejetés, soit systématiquement, soit selon leur émetteur. L’Utilisateur peut également configurer son logiciel de navigation de manière à ce que l’acceptation ou le refus des Cookies lui soient proposés ponctuellement, avant qu’un Cookie soit susceptible d’être enregistré dans son terminal. <a href="https://vision-data.io/">https://vision-data.io/</a> informe l’Utilisateur que, dans ce cas, il se peut que les fonctionnalités de son logiciel de navigation ne soient pas toutes disponibles.</p>
-           <p>
-          Si l’Utilisateur refuse l’enregistrement de Cookies dans son terminal ou son navigateur, ou si l’Utilisateur supprime ceux qui y sont enregistrés, l’Utilisateur est informé que sa navigation et son expérience sur le Site peuvent être limitées. Cela pourrait également être le cas lorsque <a href="https://vision-data.io/">https://vision-data.io/</a> ou l’un de ses prestataires ne peut pas reconnaître, à des fins de compatibilité technique, le type de navigateur utilisé par le terminal, les paramètres de langue et d’affichage ou le pays depuis lequel le terminal semble connecté à Internet.</p>
-           <p>
-          Le cas échéant, <a href="https://vision-data.io/">https://vision-data.io/</a> décline toute responsabilité pour les conséquences liées au fonctionnement dégradé du Site et des services éventuellement proposés par <a href="https://vision-data.io/">https://vision-data.io/</a>, résultant (i) du refus de Cookies par l’Utilisateur (ii) de l’impossibilité pour <a href="https://vision-data.io/">https://vision-data.io/</a> d’enregistrer ou de consulter les Cookies nécessaires à leur fonctionnement du fait du choix de l’Utilisateur. Pour la gestion des Cookies et des choix de l’Utilisateur, la configuration de chaque navigateur est différente. Elle est décrite dans le menu d’aide du navigateur, qui permettra de savoir de quelle manière l’Utilisateur peut modifier ses souhaits en matière de Cookies.</p>
-           <p>
-          À tout moment, l’Utilisateur peut faire le choix d’exprimer et de modifier ses souhaits en matière de Cookies. <a href="https://vision-data.io/">https://vision-data.io/</a> pourra en outre faire appel aux services de prestataires externes pour l’aider à recueillir et traiter les informations décrites dans cette section.</p>
-           <p>
-          Enfin, en cliquant sur les icônes dédiées aux réseaux sociaux Twitter, Facebook, Linkedin et Google Plus figurant sur le Site de <a href="https://vision-data.io/">https://vision-data.io/</a> ou dans son application mobile et si l’Utilisateur a accepté le dépôt de cookies en poursuivant sa navigation sur le Site Internet ou l’application mobile de <a href="https://vision-data.io/">https://vision-data.io/</a>, Twitter, Facebook, Linkedin et Google Plus peuvent également déposer des cookies sur vos terminaux (ordinateur, tablette, téléphone portable).</p>
-           <p>
-          Ces types de cookies ne sont déposés sur vos terminaux qu’à condition que vous y consentiez, en continuant votre navigation sur le Site Internet ou l’application mobile de <a href="https://vision-data.io/">https://vision-data.io/</a>. À tout moment, l’Utilisateur peut néanmoins revenir sur son consentement à ce que <a href="https://vision-data.io/">https://vision-data.io/</a> dépose ce type de cookies.</p>
-           
+          Un « cookie » est un petit fichier d’information envoyé sur le navigateur de l’Utilisateur et enregistré au sein du terminal de l’Utilisateur (ex : ordinateur, smartphone), (ci-après « Cookies »). Ce fichier comprend des informations telles que le nom de domaine de l’Utilisateur, le fournisseur d’accès Internet de l’Utilisateur, le système d’exploitation de l’Utilisateur, ainsi que la date et l’heure d’accès. Le site https://vision-data.io/ n’utilise pas de cookies.</p>
+          
           <h3>Article 9.2. BALISES (“TAGS”) INTERNET</h3>
            
 
@@ -544,7 +530,7 @@ function route() {
               quant à la survenance de l'incident en question.
             </p>
             
-            <h2>13- Transfeû des données personnelles à l'étranger</h2>
+            <h2>13- Transfert des données personnelles à l'étranger</h2>
             <p><strong>Pas de transfert en dehors de l'Union européenne</strong></p>
             <p>
               L'Éditeur s'engage à ne pas transférer les données personnelles de ses Utilisateurs en dehors de
