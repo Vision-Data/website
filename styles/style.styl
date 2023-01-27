@@ -71,8 +71,9 @@ body {
 	z-index: 1;
 }
 
+//disable
 .decoration::before {
-	content: '';
+	// content: '';
 	background-image: url('assets/full-orange.svg');
 	background-position: center;
 	background-size: contain;
@@ -244,6 +245,23 @@ em {
 	font-style: normal;
 }
 
+main > .presentation-container&:nth-of-type(odd) {
+	flex-direction: row-reverse;
+	margin-top: 10rem;
+
+	& img {
+		margin: auto;
+	}
+
+	& .callout-image {
+		margin-left: 10rem;
+
+		@media (max-width: 1200px) {
+			margin-left: 0;
+		}
+	}
+}
+
 .presentation-container {
 	display: flex;
 	justify-content: space-around;
@@ -256,7 +274,7 @@ em {
 	}
 
 	& img {
-		width: 50%;
+		width: 40%;
 		max-width: 25rem;
 
 		@media (max-width: 1200px) {
@@ -450,7 +468,7 @@ em {
 	flex: 1;
 }
 
-.callout-text {
+.callout-text h2 {
 	font-size: 3.5rem;
 	font-weight: bold;
 	width: 30rem;
@@ -669,8 +687,9 @@ em {
 
 .news {
 	&-empty {
-		margin-bottom : 20rem;
+		margin-bottom: 20rem;
 	}
+
 	&-container {
 		margin: 0 auto;
 		margin-top: 4rem;
