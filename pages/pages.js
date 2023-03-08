@@ -3,26 +3,26 @@ import '../styles/style.styl'
 
 route();
 
-window.addEventListener('hashchange', ()=>{
+window.addEventListener('hashchange', () => {
   route();
 });
 
 function route() {
-  if(window.location.hash) {
+  if (window.location.hash) {
     const hash = window.location.hash;
-    switch (hash.replace('#','')) {
-        case 'aboutus':
-            document.querySelector('#app').innerHTML = `
+    switch (hash.replace('#', '')) {
+      case 'aboutus':
+        document.querySelector('#app').innerHTML = `
             <div class="title-container">
               <b>Open-Source</b>
               <h1 class="mb-5 text-5xl font-bold">
-                A propos
+                Qui sommes-nous ?
               </h1>
               <p>Vision est une application web permettant de visualiser vos données provenant d'une API. Indiquer les données à visualiser et Vision vous créera des schémas</p>
             </div>
       
             <div class="text-container">
-                <h2>1. Qui sont Nous</h2>
+                <h2>1. Notre projet</h2>
                 <p>These User Terms of Service ("Terms") are between you ("you") and Postman, Inc. ("Postman" or "we") and govern your use of all versions of the Postman software and services, including the Postman API and Beta Previews (collectively, the "Services"), and the Postman websites, including but not limited to www.postman.com, blog.postman.com, learning.postman.com, community.postman.com, and store.postman.com (the "Websites").</p>
                 
                 <h2>2. Nos Objectifs</h2>
@@ -31,15 +31,27 @@ function route() {
                 
                 <p>You may not use the Services in violation of export control or sanctions laws of the United States or any other applicable jurisdiction. You may not use the Services if you are or are working on behalf of a Specially Designated National (SDN) or a person subject to similar blocking or denied party prohibitions administered by a U.S. government agency.</p>
                 
-                <h2>3. La vie du projet</h2>
-                <p>Subject to your compliance with these Terms and paying the applicable fees, Postman grants you a </p>
-                
-                <p>The Services include certain code and libraries licensed to us by third parties, including open source software ("OSS") as listed at postman.com/legal/third-party along with the applicable OSS license. Your right to use such OSS shall be governed by the applicable OSS license agreement instead of these Terms.</p>
+                <h2>3. L'équipe Vision</h2>
+                <p>6 étudiants qui se sont réunis pour créer un projet qui les motive et faire avancer le monde</p>
+                <ul>
+                <li><strong>Chargée de communication:</strong> Ludivine Vinet</li>
+                <li><strong>Développeur Back & Chef Technique:</strong> Arthur Geay</li>
+                <li><strong>Chef de projet & designer:</strong> Jérémie Delécrin</li>
+                <li><strong>Développeur Front-End:</strong> Paulin Sirot</li>
+                <li><strong>Développeuse Front-End:</strong> Léone Lalloué</li>
+                <li><strong>Développeur Front-End:</strong> Yessi Munguengui</li>
+
+                <h2>4. Nos valeurs</h2>
+                <ul>
+                  <li>Entraide</li>
+                  <li>Vulgarisation</li>
+                  <li>Accessibilité</li>
+                </ul>
             </div>
             `;
-            break;
-        case 'lexique':
-            document.querySelector('#app').innerHTML = `
+        break;
+      case 'lexique':
+        document.querySelector('#app').innerHTML = `
             <div class="title-container">
               <b>Open-Source</b>
               <h1 class="mb-5 text-5xl font-bold">
@@ -50,33 +62,63 @@ function route() {
       
             <div class="text-container">
                 <h2>API</h2>
-                <p>These User Terms of Service ("Terms") are between you ("you") and Postman, Inc. ("Postman" or "we") and govern your use of all versions of the Postman software and services, including the Postman API and Beta Previews (collectively, the "Services"), and the Postman websites, including but not limited to www.postman.com, blog.postman.com, learning.postman.com, community.postman.com, and store.postman.com (the "Websites").</p>
+                <p>Une API aussi appelée interface de programmation d’application est un service de communication qui permet d’échanger des données. Plus précisément, on va utiliser les fonctions d’un logiciel sur un autre programme pour développer des fonctionnalités et importer des données.</p>
+
+                <h2>Open Source</h2>
+                <p>L’open source est une méthode de codage publique, l’auteur accorde tous les droits sur son logiciel aux autres utilisateurs. Celui-ci peut être modifié, étudié ou encore ré-utilisé par une autre personne.</p>
+
+                <h2>Schéma</h2>
+                <p>Un schéma est une représentation des données visuelle qui est intuitive et simple.</p>
+
+                <h2>Donnée</h2>
+                <p>Une donnée est un élément d’information qui va servir à apporter une réponse à une question. Elle peut aussi être étudiée dans le cadre de recherches.</p>
+
+                <h2>Github</h2>
+                <p>Guithub est une plateforme qui permet aux développeurs de stocker et de partager leurs codes. Ils peuvent les rendre publique ou les garder privé. </p>
                 
                 <h2>Requête HTTP</h2>
-                <p>By downloading, installing, or using the Services on any computer system, or by accepting these Terms (either by clicking a box indicating that you accept these Terms, or by executing an ordering document ("Order") referencing these Terms), you acknowledge and agree that you have read, understand, and agree to be bound by these Terms and our Privacy Policy.</p>
+                <p>Une requête http est utilisée par le navigateur web pour consulter un site internet. En fonction de la requête demandée le navigateur web va renvoyer directement sur la page web demandée.</p>
                 
-                <h2>Body</h2>
-                <p>Subject to your compliance with thes</p>
-                
-                <h2>Token</h2>
-                <p>Subject to your compliance with thes</p>
-
                 <h2>Header</h2>
-                <p>Subject to your compliance with thes</p>
-
+                <p>Le header correspond à l’en-tête d’un site web, c’est dans cette partie que l’on retrouve le menu de navigation et le logo de la marque</p>
+                
                 <h2>Protocole HTTPS</h2>
-                <p>Subject to your compliance with thes</p>
+                <p>Le protocole https prouve que le site est sécurisé ce qui garantit la confidentialité des échanges entre l'ordinateur de l'utilisateur et le service.</p>
 
-                <h2>Tableau, Objet et valeurs (Array, Object, Value)</h2>
-                <p>Subject to your compliance with thes</p>
-
+                <h2>Body (Corps d'une requête)</h2>
+                <p>C'est un ensemble de lignes non-obligatoire permettant de fournir des informations lors de l'envoi de données à un service.</p>
+                
+                
                 <h2>GET, POST, PUT et DELETE</h2>
-                <p>Subject to your compliance with thes</p>
+                <p>
+                  <ul>
+                    <li>GET (RECEVOIR) est une requête http qui permet d’obtenir une ressource</li>
+                    <li>POST (ENVOYER) est une requête http qui permet d’avoir accès à un formulaire en ligne</li>
+                    <li>PUT (MODIFIER) est une requête qui permet de mettre à jour ou d’insérer une ressource</li>
+                    <li>DELETE (SUPPIMER) est une requête qui permet d’effacer des informations</li>
+                  </ul>
+                </p>
+
+                <h2>Token (Jeton)</h2>
+                <p>Un token est un élément qui permet de certifier l’authentification d’une personne sur un site web.</p>
+                
+                <h2>Tableau, Objet et valeurs (Array, Object, Value)</h2>
+                <p>
+                <ul>
+                  <li>Un tableau est un groupement de valeurs</li>
+                  <li>Un objet est un structuration de données permettant de regrouper des valeurs autour d'un même thème</li>
+                  <li>Une valeur est une information ou une donnée</li>
+                </ul>
+                </p>
+
+                <h2>JSON</h2>
+                <p>JSON (JavaScript Objet Notation) est un format de données caractérisé par l'utilisation d'accolades "{}" et sa représentation en arborescence. Il est facilement lisible par les ordinateurs et les humains.</p>
+
             </div>
             `;
-            break;
-        case 'agreement':
-            document.querySelector('#app').innerHTML = `
+        break;
+      case 'agreement':
+        document.querySelector('#app').innerHTML = `
             <div class="title-container">
             <b>Open-Source</b>
             <h1 class="mb-5 text-5xl font-bold">
@@ -109,7 +151,7 @@ function route() {
           Le responsable publication est une personne physique ou une personne morale.<br>
           <strong>Webmaster</strong> : A.Geay – vision<br>
           <strong>Hébergeur</strong> : ovh – 2 rue Kellermann 59100 Roubaix 1007<br>
-          <strong>Délégué à la protection des données</strong> : A.Geat – vision@mail.com<br>
+          <strong>Délégué à la protection des données</strong> : A.Geat – visiondata@mail.com<br>
           </p>
 
           <div ng-bind-html="linkHTML"><p>Ce modèle de mentions légales est proposé par le <a href="https://fr.orson.io/1371/generateur-mentions-legales" title="générateur de mentions légales RGPD d">générateur de mentions légales RGPD d'Orson.io</a></p></div>
@@ -212,10 +254,10 @@ function route() {
 
           <p>Dès que <a href="https://vision-data.io/">https://vision-data.io/</a> a connaissance du décès d’un Utilisateur et à défaut d’instructions de sa part, <a href="https://vision-data.io/">https://vision-data.io/</a> s’engage à détruire ses données, sauf si leur conservation s’avère nécessaire à des fins probatoires ou pour répondre à une obligation légale.</p>
            
-          <p>Si l’Utilisateur souhaite savoir comment <a href="https://vision-data.io/">https://vision-data.io/</a> utilise ses Données Personnelles, demander à les rectifier ou s’oppose à leur traitement, l’Utilisateur peut contacter <a href="https://vision-data.io/">https://vision-data.io/</a> par écrit à l’adresse suivante : </p>
+          <p>Si l’Utilisateur souhaite savoir comment <a href="https://vision-data.io/">https://vision-data.io/</a> utilise ses Données Personnelles, demander à les rectifier ou s’oppose à leur traitement, l’Utilisateur peut contacter  l’adresse suivante : </p>
            
-          Vision Data team – DPO, A.Geat <br>
-          20 boulevard General de Gaulle 44000 Nantes.
+          visiondata@mail.com <br>
+         
            
           <p>Dans ce cas, l’Utilisateur doit indiquer les Données Personnelles qu’il souhaiterait que <a href="https://vision-data.io/">https://vision-data.io/</a> corrige, mette à jour ou supprime, en s’identifiant précisément avec une copie d’une pièce d’identité (carte d’identité ou passeport). </p>
 
@@ -256,27 +298,13 @@ function route() {
           <h2>9. Liens hypertextes « cookies » et balises (“tags”) internet</h2>
           <p>
           Le site <a href="https://vision-data.io/">https://vision-data.io/</a> contient un certain nombre de liens hypertextes vers d’autres sites, mis en place avec l’autorisation de <a href="https://vision-data.io/">https://vision-data.io/</a>. Cependant, <a href="https://vision-data.io/">https://vision-data.io/</a> n’a pas la possibilité de vérifier le contenu des sites ainsi visités, et n’assumera en conséquence aucune responsabilité de ce fait.</p>
-          Sauf si vous décidez de désactiver les cookies, vous acceptez que le site puisse les utiliser. Vous pouvez à tout moment désactiver ces cookies et ce gratuitement à partir des possibilités de désactivation qui vous sont offertes et rappelées ci-après, sachant que cela peut réduire ou empêcher l’accessibilité à tout ou partie des Services proposés par le site.
+          
           <p></p>
 
           <h3>9.1. « COOKIES »</h3>
            <p>
-          Un « cookie » est un petit fichier d’information envoyé sur le navigateur de l’Utilisateur et enregistré au sein du terminal de l’Utilisateur (ex : ordinateur, smartphone), (ci-après « Cookies »). Ce fichier comprend des informations telles que le nom de domaine de l’Utilisateur, le fournisseur d’accès Internet de l’Utilisateur, le système d’exploitation de l’Utilisateur, ainsi que la date et l’heure d’accès. Les Cookies ne risquent en aucun cas d’endommager le terminal de l’Utilisateur.</p>
-           <p>
-          <a href="https://vision-data.io/">https://vision-data.io/</a> est susceptible de traiter les informations de l’Utilisateur concernant sa visite du Site, telles que les pages consultées, les recherches effectuées. Ces informations permettent à <a href="https://vision-data.io/">https://vision-data.io/</a> d’améliorer le contenu du Site, de la navigation de l’Utilisateur.</p>
-           <p>
-          Les Cookies facilitant la navigation et/ou la fourniture des services proposés par le Site, l’Utilisateur peut configurer son navigateur pour qu’il lui permette de décider s’il souhaite ou non les accepter de manière à ce que des Cookies soient enregistrés dans le terminal ou, au contraire, qu’ils soient rejetés, soit systématiquement, soit selon leur émetteur. L’Utilisateur peut également configurer son logiciel de navigation de manière à ce que l’acceptation ou le refus des Cookies lui soient proposés ponctuellement, avant qu’un Cookie soit susceptible d’être enregistré dans son terminal. <a href="https://vision-data.io/">https://vision-data.io/</a> informe l’Utilisateur que, dans ce cas, il se peut que les fonctionnalités de son logiciel de navigation ne soient pas toutes disponibles.</p>
-           <p>
-          Si l’Utilisateur refuse l’enregistrement de Cookies dans son terminal ou son navigateur, ou si l’Utilisateur supprime ceux qui y sont enregistrés, l’Utilisateur est informé que sa navigation et son expérience sur le Site peuvent être limitées. Cela pourrait également être le cas lorsque <a href="https://vision-data.io/">https://vision-data.io/</a> ou l’un de ses prestataires ne peut pas reconnaître, à des fins de compatibilité technique, le type de navigateur utilisé par le terminal, les paramètres de langue et d’affichage ou le pays depuis lequel le terminal semble connecté à Internet.</p>
-           <p>
-          Le cas échéant, <a href="https://vision-data.io/">https://vision-data.io/</a> décline toute responsabilité pour les conséquences liées au fonctionnement dégradé du Site et des services éventuellement proposés par <a href="https://vision-data.io/">https://vision-data.io/</a>, résultant (i) du refus de Cookies par l’Utilisateur (ii) de l’impossibilité pour <a href="https://vision-data.io/">https://vision-data.io/</a> d’enregistrer ou de consulter les Cookies nécessaires à leur fonctionnement du fait du choix de l’Utilisateur. Pour la gestion des Cookies et des choix de l’Utilisateur, la configuration de chaque navigateur est différente. Elle est décrite dans le menu d’aide du navigateur, qui permettra de savoir de quelle manière l’Utilisateur peut modifier ses souhaits en matière de Cookies.</p>
-           <p>
-          À tout moment, l’Utilisateur peut faire le choix d’exprimer et de modifier ses souhaits en matière de Cookies. <a href="https://vision-data.io/">https://vision-data.io/</a> pourra en outre faire appel aux services de prestataires externes pour l’aider à recueillir et traiter les informations décrites dans cette section.</p>
-           <p>
-          Enfin, en cliquant sur les icônes dédiées aux réseaux sociaux Twitter, Facebook, Linkedin et Google Plus figurant sur le Site de <a href="https://vision-data.io/">https://vision-data.io/</a> ou dans son application mobile et si l’Utilisateur a accepté le dépôt de cookies en poursuivant sa navigation sur le Site Internet ou l’application mobile de <a href="https://vision-data.io/">https://vision-data.io/</a>, Twitter, Facebook, Linkedin et Google Plus peuvent également déposer des cookies sur vos terminaux (ordinateur, tablette, téléphone portable).</p>
-           <p>
-          Ces types de cookies ne sont déposés sur vos terminaux qu’à condition que vous y consentiez, en continuant votre navigation sur le Site Internet ou l’application mobile de <a href="https://vision-data.io/">https://vision-data.io/</a>. À tout moment, l’Utilisateur peut néanmoins revenir sur son consentement à ce que <a href="https://vision-data.io/">https://vision-data.io/</a> dépose ce type de cookies.</p>
-           
+          Un « cookie » est un petit fichier d’information envoyé sur le navigateur de l’Utilisateur et enregistré au sein du terminal de l’Utilisateur (ex : ordinateur, smartphone), (ci-après « Cookies »). Ce fichier comprend des informations telles que le nom de domaine de l’Utilisateur, le fournisseur d’accès Internet de l’Utilisateur, le système d’exploitation de l’Utilisateur, ainsi que la date et l’heure d’accès. Le site https://vision-data.io/ n’utilise pas de cookies.</p>
+          
           <h3>Article 9.2. BALISES (“TAGS”) INTERNET</h3>
            
 
@@ -302,9 +330,9 @@ function route() {
       
           </div>
             `;
-            break;
-        case 'policy':
-            document.querySelector('#app').innerHTML = `
+        break;
+      case 'policy':
+        document.querySelector('#app').innerHTML = `
             <div class="title-container">
               <b>Open-Source</b>
               <h1 class="mb-5 text-5xl font-bold">
@@ -502,7 +530,7 @@ function route() {
               quant à la survenance de l'incident en question.
             </p>
             
-            <h2>13- Transfeû des données personnelles à l'étranger</h2>
+            <h2>13- Transfert des données personnelles à l'étranger</h2>
             <p><strong>Pas de transfert en dehors de l'Union européenne</strong></p>
             <p>
               L'Éditeur s'engage à ne pas transférer les données personnelles de ses Utilisateurs en dehors de
@@ -542,9 +570,9 @@ function route() {
             
             </div>
             `;
-            break;
-        case 'contact':
-            document.querySelector('#app').innerHTML = `
+        break;
+      case 'contact':
+        document.querySelector('#app').innerHTML = `
             <div class="title-container">
               <b>Open-Source</b>
               <h1 class="mb-5 text-5xl font-bold">
@@ -558,7 +586,7 @@ function route() {
                 <div class="copy-mail">
                 <div class="mockup-code text-primary-content">
                     <pre>
-                      <code>vision@mail.fr</code>
+                      <code>visiondata@mail.com</code>
                     </pre>
                 </div>
                 <div class="copy">
@@ -590,12 +618,12 @@ function route() {
             })
             </script>
             `;
-            break;
-    
-        default:
-            break;
+        break;
+
+      default:
+        break;
     }
-} else {
+  } else {
     // Fragment doesn't exist
-}
+  }
 }
