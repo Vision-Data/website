@@ -31,7 +31,123 @@
         </div>
     </div>
 
-    <main id="app"></main>
+    <main id="app">
+        <div class="prices">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Free plan<span class="price"><br/>0€</span></th>
+                        <th>Paid plan<span class="price"><br/>8€/mois</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre de requêtes par semaine</td>
+                        <td>15</td>
+                        <td>Illimité</td>
+                    </tr>
+                    <tr>
+                        <td>Graphiques utilisables</td>
+                        <td>2</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Exportations des schémas</td>
+                        <td>5 (qualité 200x200px)</td>
+                        <td>Illimité</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre d'espace de travail</td>
+                        <td>1</td>
+                        <td>Illimité</td>
+                    </tr>
+                    <tr>
+                        <td>Collaboration en direct sur un espace de travail</td>
+                        <td>-</td>
+                        <td>Collaboration jusqu'à 10 personnes</td>
+                    </tr>
+                    <tr>
+                        <td>Support en direct</td>
+                        <td>-</td>
+                        <td>Illimité</td>
+                    </tr>
+                    <tr>
+                        <td>Personnalisation de l'espace de travail</td>
+                        <td>-</td>
+                        <td>Modification des couleurs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <style>
+        .prices {
+            margin-top: 4rem;
+        }
+        
+        .price {
+            font-size: 0.8em;
+            color: #6b7280;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        
+        th,
+        td {
+            text-align: left;
+            padding: 16px;
+        }
+        
+        th {
+            font-weight: 700;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        td {
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        thead th {
+            height: 10rem;
+            font-size: 1.5rem;
+            text-align: center;
+            color: var(--vision-orange);
+        }
+        
+        thead th:nth-child(2),
+        thead th:nth-child(3) {
+            border-left: 1px solid rgb(193, 193, 193)
+        }
+        
+        tbody td:nth-child(1) {
+            font-weight: bold;
+        }
+        
+        tbody td:nth-child(2),
+        tbody td:nth-child(3) {
+            text-align: center;
+            border-left: 1px solid rgb(193, 193, 193)
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f3f4f6;
+        }
+        
+        tr:hover {
+            background-color: #edf2f7;
+        }
+        
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+    </style>
 
 
     <footer class="p-10 footer bg-base-200 text-base-content">
@@ -75,7 +191,7 @@
             </div>
         </div>
     </footer>
-    <script type="module" src="./pages.js"></script>
+    <script type="module" src="./prices.js"></script>
 </body>
 
 </html>
