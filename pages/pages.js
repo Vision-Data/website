@@ -4,15 +4,15 @@ import '../styles/style.styl'
 route();
 
 window.addEventListener('hashchange', () => {
-  route();
+    route();
 });
 
 function route() {
-  if (window.location.hash) {
-    const hash = window.location.hash;
-    switch (hash.replace('#', '')) {
-      case 'aboutus':
-        document.querySelector('#app').innerHTML = `
+    if (window.location.hash) {
+        const hash = window.location.hash;
+        switch (hash.replace('#', '')) {
+            case 'aboutus':
+                document.querySelector('#app').innerHTML = `
             <div class="title-container">
               <b>Open-Source</b>
               <h1 class="mb-5 text-5xl font-bold">
@@ -23,17 +23,16 @@ function route() {
       
             <div class="text-container">
                 <h2>1. Notre projet</h2>
-                <p>These User Terms of Service ("Terms") are between you ("you") and Postman, Inc. ("Postman" or "we") and govern your use of all versions of the Postman software and services, including the Postman API and Beta Previews (collectively, the "Services"), and the Postman websites, including but not limited to www.postman.com, blog.postman.com, learning.postman.com, community.postman.com, and store.postman.com (the "Websites").</p>
+                <p>Vision - Application décisionnelle - Exploitez les données de vos API simplement !</p>
                 
                 <h2>2. Nos Objectifs</h2>
-                <p>By downloading, installing, or using the Services on any computer system, or by accepting these Terms (either by clicking a box indicating that you accept these Terms, or by executing an ordering document ("Order") referencing these Terms), you acknowledge and agree that you have read, understand, and agree to be bound by these Terms and our Privacy Policy.</p>
-      
-                
-                <p>You may not use the Services in violation of export control or sanctions laws of the United States or any other applicable jurisdiction. You may not use the Services if you are or are working on behalf of a Specially Designated National (SDN) or a person subject to similar blocking or denied party prohibitions administered by a U.S. government agency.</p>
-                
+                <p>Permet à tous de prendre des décisions grâce au pouvoir du visuel</p>
+                  
                 <h2>3. L'équipe Vision</h2>
                 <p>6 étudiants qui se sont réunis pour créer un projet qui les motive et faire avancer le monde</p>
                 <ul>
+                <li><strong>Expert Marketing:</strong> Nicolas</li>
+                <li><strong>Chargée de communication:</strong> Tiphaine</li>
                 <li><strong>Chargée de communication:</strong> Ludivine Vinet</li>
                 <li><strong>Développeur Back & Chef Technique:</strong> Arthur Geay</li>
                 <li><strong>Chef de projet & designer:</strong> Jérémie Delécrin</li>
@@ -49,9 +48,9 @@ function route() {
                 </ul>
             </div>
             `;
-        break;
-      case 'lexique':
-        document.querySelector('#app').innerHTML = `
+                break;
+            case 'lexique':
+                document.querySelector('#app').innerHTML = `
             <div class="title-container">
               <b>Open-Source</b>
               <h1 class="mb-5 text-5xl font-bold">
@@ -116,9 +115,9 @@ function route() {
 
             </div>
             `;
-        break;
-      case 'agreement':
-        document.querySelector('#app').innerHTML = `
+                break;
+            case 'agreement':
+                document.querySelector('#app').innerHTML = `
             <div class="title-container">
             <b>Open-Source</b>
             <h1 class="mb-5 text-5xl font-bold">
@@ -330,9 +329,9 @@ function route() {
       
           </div>
             `;
-        break;
-      case 'policy':
-        document.querySelector('#app').innerHTML = `
+                break;
+            case 'policy':
+                document.querySelector('#app').innerHTML = `
             <div class="title-container">
               <b>Open-Source</b>
               <h1 class="mb-5 text-5xl font-bold">
@@ -570,9 +569,9 @@ function route() {
             
             </div>
             `;
-        break;
-      case 'contact':
-        document.querySelector('#app').innerHTML = `
+                break;
+            case 'contact':
+                document.querySelector('#app').innerHTML = `
             <div class="title-container">
               <b>Open-Source</b>
               <h1 class="mb-5 text-5xl font-bold">
@@ -618,12 +617,12 @@ function route() {
             })
             </script>
             `;
-        break;
+                break;
 
-      default:
-        break;
+            default:
+                break;
+        }
+    } else {
+        // Fragment doesn't exist
     }
-  } else {
-    // Fragment doesn't exist
-  }
 }
